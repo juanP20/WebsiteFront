@@ -12,6 +12,9 @@ import { CartComponent } from './cart/cart.component';
 import { OrderComponent } from './order/order.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { OpenProductsDirectiveDirective } from './open-products-directive.directive';
 
 @NgModule({
   declarations: [
@@ -24,10 +27,14 @@ import { FooterComponent } from './footer/footer.component';
     CartComponent,
     OrderComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PageNotFoundComponent,
+    OpenProductsDirectiveDirective
   ],
   imports: [
-    BrowserModule,ReactiveFormsModule
+    BrowserModule,
+    ReactiveFormsModule,
+    AppRoutingModule  
   ],
   providers: [],
   bootstrap: [AppComponent]
