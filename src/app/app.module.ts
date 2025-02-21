@@ -15,6 +15,11 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { OpenProductsDirectiveDirective } from './open-products-directive.directive';
+import { OpenProductsDetailsDirective } from './directives/open-products-details.directive';
+import { OpenProductsDirective } from './directives/open-products.directive';
+import { Router, RouterModule } from '@angular/router';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +34,17 @@ import { OpenProductsDirectiveDirective } from './open-products-directive.direct
     HeaderComponent,
     FooterComponent,
     PageNotFoundComponent,
-    OpenProductsDirectiveDirective
+    OpenProductsDirectiveDirective,
+    OpenProductsDetailsDirective,
+    OpenProductsDirective,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    AppRoutingModule  
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
